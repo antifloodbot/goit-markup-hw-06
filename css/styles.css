@@ -292,7 +292,7 @@ h1 {
 .mobile-menu-container {
     position: relative;
     padding-top: 72px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     height: 100%;
