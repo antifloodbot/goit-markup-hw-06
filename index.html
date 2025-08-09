@@ -60,20 +60,120 @@
           </svg>
         </button>
       </div>
-
+      <!-- Mobile Menu -->
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc link</div>
+          <button
+            class="mobile-menu-close"
+            type="button"
+            data-menu-close
+            aria-label="Close"
+          >
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/modal-icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <a href="#" class="mobile-menu-link">Studio</a>
+            <a href="#" class="mobile-menu-link">Portfolio</a>
+            <a href="#" class="mobile-menu-link">Contacts</a>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-social-list">
+                  <li class="mobile-social-item">
+                    <a href="#" class="mobile-social-link" aria-label="Instagram">
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a href="#" class="mobile-social-link" aria-label="Twitter">
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-twitter1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a href="#" class="mobile-social-link" aria-label="Facebook">
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-facebook1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a href="#" class="mobile-social-link" aria-label="LinkedIn">
+                      <svg class="mobile-social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-linkedin1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="third-section-list-item">
+              <img
+                src="./images/team/img-4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
+              <div class="container-name-title">
+                <h3 class="third-section-subtitle">Daniel Wilson</h3>
+                <p class="third-section-paragraph">UI Designer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-instagram1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-twitter1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-facebook1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/socials.svg#icon-linkedin1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+          </address>
+          
         </div>
       </div>
     </header>
     <!-- #endregion -->
     <main>
       <!-- #region Section 1 -->
-      <section class="first-section">
+      <section class="hidden first-section">
         <div class="container first-section-container">
           <h1 class="first-section-header">
             Effective Solutions for Your Business
@@ -89,7 +189,7 @@
       </section>
       <!-- #endregion -->
       <!-- #region Section 2 -->
-      <section class="second-section">
+      <section class="hidden second-section">
         <div class="container second-section-container">
           <h2 class="visually-hidden"></h2>
           <ul class="second-section-list">
@@ -146,7 +246,7 @@
       </section>
       <!-- #endregion -->
       <!-- #region Section 3 -->
-      <section class="third-section">
+      <section class="hidden third-section">
         <div class="container third-section-container">
           <h2 class="third-section-header">Our Team</h2>
           <ul class="third-section-list">
@@ -323,7 +423,7 @@
       </section>
       <!-- #endregion -->
       <!-- #region Section 4 -->
-      <section class="fourth-section">
+      <section class="hidden fourth-section">
         <div class="container container-fourth-section">
           <h2 class="third-section-header">Our Portfolio</h2>
           <ul class="fourth-section-list">
@@ -452,7 +552,7 @@
       <!-- #endregion -->
     </main>
     <!--#region Footer-->
-    <footer class="footer">
+    <footer class="hidden footer">
       <div class="container container-footer">
         <div class="footer-logo-wrapper" style="margin-right: 120px">
           <a class="logo footer-logo" href="./index.html">
@@ -521,7 +621,7 @@
     </footer>
     <!-- #endregion -->
     <!--#region Modal -->
-    <div class="backdrop" data-modal>
+    <div class="hidden backdrop" data-modal>
       <div class="modal">
         <!-- Кнопка закриття -->
         <button
