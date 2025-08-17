@@ -318,15 +318,12 @@ h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    /* 111% */
     letter-spacing: 0.02em;
     color: #2e2f42;
-    /* NAVY BLUE */
 }
 
 .mobile-menu-nav .mobile-menu-link:first-child {
     color: #404bbf;
-    /* active: Studio (OCEAN) */
 }
 
 /* Contacts */
@@ -479,8 +476,6 @@ h1 {
     letter-spacing: 0.04em;
 }
 
-/* --- Медіа-запити --- */
-
 /* Смартфон */
 @media (max-width: 767px) {
     .first-section {
@@ -494,7 +489,6 @@ h1 {
         font-size: 36px;
         line-height: 40px;
         margin-bottom: 72px;
-        /* згідно макету */
     }
 
     .first-section-order-button {
@@ -571,7 +565,6 @@ h1 {
     overflow: hidden;
 }
 
-/* Іконки сховані за замовчуванням (мобілка + планшет) */
 .icon-box {
     display: none;
 }
@@ -583,7 +576,6 @@ h1 {
     padding: 0;
     margin: 0;
     gap: 72px 0;
-    /* 📱 смартфон — тільки вертикальні відступи 72px */
 }
 
 .second-section-element {
@@ -606,7 +598,7 @@ h1 {
     color: #434455;
 }
 
-/* 📱 Мобілка */
+/* Мобілка */
 @media screen and (max-width: 767px) {
     .second-section-subtitle {
         font-weight: 700;
@@ -625,11 +617,10 @@ h1 {
     }
 }
 
-/* 📲 Планшет */
+/* Планшет */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .second-section-list {
         gap: 72px 24px;
-        /* ✅ 72px вертикально, 24px горизонтально */
     }
 
     .second-section-element {
@@ -653,18 +644,16 @@ h1 {
     }
 }
 
-/* 💻 Десктоп */
+/* Десктоп */
 @media screen and (min-width: 1158px) {
     .second-section-list {
         gap: 0 24px;
-        /* ✅ тільки горизонтальні відступи */
     }
 
     .second-section-element {
         width: calc((100% - 72px) / 4);
     }
 
-    /* Повертаємо іконки тільки на десктопі */
     .icon-box {
         display: flex;
         align-items: center;
@@ -694,13 +683,11 @@ h1 {
     color: #2e2f42;
 }
 
-/* Фіксовані картки 264px, одна колонка на мобілці */
 .third-section-list {
     display: grid;
     grid-template-columns: repeat(1, 264px);
     justify-content: center;
     gap: 72px 0;
-    /* ✅ вертикальний відступ 72px */
 }
 
 .third-section-list-item {
@@ -712,7 +699,6 @@ h1 {
     overflow: hidden;
 }
 
-/* Фото фіксованого розміру як у макеті */
 .third-section-list-item img {
     display: block;
     width: 264px;
@@ -788,7 +774,6 @@ h1 {
     .third-section-list {
         grid-template-columns: repeat(2, 264px);
         gap: 64px 24px;
-        /* ✅ 64px вертикально, 24px горизонтально */
     }
 
     .third-section-list-item {
@@ -827,7 +812,6 @@ h1 {
     .third-section-list {
         grid-template-columns: repeat(4, 264px);
         gap: 24px;
-        /* ✅ рівні відступи по 24px */
     }
 
     .third-section-paragraph {
@@ -856,7 +840,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 16px;
-    /* row-gap column-gap */
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -916,7 +899,6 @@ h1 {
     color: #2e2f42;
     margin-bottom: 8px;
     text-align: left;
-    /* Вирівнювання по лівому краю */
 }
 
 .fourth-section-paragraph {
@@ -924,7 +906,6 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
-    /* Вирівнювання по лівому краю */
 }
 
 /* Планшет */
@@ -941,7 +922,6 @@ h1 {
 
     .fourth-section-list {
         gap: 72px 24px;
-        /* row-gap col-gap */
     }
 
     .fourth-section-list-item {
@@ -975,7 +955,6 @@ h1 {
 
     .fourth-section-list {
         gap: 48px 16px;
-        /* row-gap col-gap */
     }
 
     .fourth-section-list-item {
@@ -1028,13 +1007,11 @@ h1 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    /* Повернули колір WEB */
     text-align: center;
 }
 
 .footer-logo .footer-logo-part {
     color: #fff;
-    /* STUDIO білим */
 }
 
 .footer-paragraph {
