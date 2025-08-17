@@ -500,6 +500,7 @@ h1 {
     padding: 120px 0;
 }
 
+/* a11y */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -513,30 +514,23 @@ h1 {
     overflow: hidden;
 }
 
+/* Іконки сховані за замовчуванням (мобілка + планшет) */
 .icon-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
+    display: none;
 }
 
 .second-section-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
-    /* дозволяє переносити елементи */
 }
 
 .second-section-element {
     width: 100%;
-    /* мобільна версія - по одному блоку в ряд */
+    /* мобілка: 1 в ряд */
     margin-bottom: 32px;
 }
 
@@ -544,6 +538,7 @@ h1 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    /* 24px */
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -552,23 +547,72 @@ h1 {
 .second-section-paragraphs {
     font-size: 16px;
     line-height: 1.5;
+    /* 24px */
     letter-spacing: 0.02em;
     color: #434455;
 }
 
-/* Планшетна версія */
-@media screen and (min-width: 768px) {
+/* Мобілка */
+@media screen and (max-width: 767px) {
+    .second-section-subtitle {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+
+    .second-section-paragraphs {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+}
+
+/* Планшет */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .second-section-element {
         width: calc((100% - 24px) / 2);
         margin-bottom: 40px;
     }
+
+    .second-section-subtitle {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .second-section-paragraphs {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+        text-align: left;
+    }
 }
 
-/* Десктопна версія */
+/* Десктоп */
 @media screen and (min-width: 1158px) {
     .second-section-element {
         width: calc((100% - 72px) / 4);
+        /* 4 в ряд */
         margin-bottom: 0;
+    }
+
+    /* Повертаємо і стилізуємо іконки тільки на десктопі */
+    .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
     }
 }
 /* #endregion */
