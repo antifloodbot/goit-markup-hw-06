@@ -620,7 +620,7 @@ h1 {
 .third-section {
     background-color: #F4F4FD;
     padding: 80px 16px;
-    /* Мобільна версія */
+    /* mobile */
 }
 
 .third-section-header {
@@ -633,18 +633,29 @@ h1 {
     color: #2e2f42;
 }
 
+/* Фіксовані картки 264px, одна колонка на мобілці */
 .third-section-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 264px);
+    justify-content: center;
     gap: 24px;
 }
 
 .third-section-list-item {
+    width: 264px;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     padding: 0;
     box-shadow: none;
-    width: 100%;
+    overflow: hidden;
+}
+
+/* Фото фіксованого розміру як у макеті */
+.third-section-list-item img {
+    display: block;
+    width: 264px;
+    height: 260px;
+    object-fit: cover;
 }
 
 .container-name-title {
@@ -667,6 +678,8 @@ h1 {
     letter-spacing: 0.02em;
     text-align: center;
     padding: 0 16px;
+    margin-bottom: 8px;
+    /* ✅ тепер завжди 8px */
 }
 
 .social-list {
@@ -700,6 +713,7 @@ h1 {
     fill: var(--light, #f4f4fd);
 }
 
+/* === Tablet (2 фіксовані колонки) === */
 @media screen and (min-width: 768px) {
     .third-section {
         padding: 100px 32px;
@@ -711,20 +725,14 @@ h1 {
     }
 
     .third-section-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
+        grid-template-columns: repeat(2, 264px);
     }
 
     .third-section-list-item {
-        width: calc((100% - 72px) / 2);
-        border-radius: 0 0 4px 4px;
         box-shadow:
             0 1px 6px rgba(46, 47, 66, 0.08),
             0 1px 1px rgba(46, 47, 66, 0.16),
             0 2px 1px rgba(46, 47, 66, 0.08);
-        padding: 0;
     }
 
     .third-section-subtitle {
@@ -734,6 +742,7 @@ h1 {
     .third-section-paragraph {
         font-size: 15px;
         padding: 0 24px;
+        /* margin-bottom: 8px вже є з базового стилю */
     }
 
     .social-item {
@@ -742,6 +751,7 @@ h1 {
     }
 }
 
+/* === Desktop (4 фіксовані колонки) === */
 @media screen and (min-width: 1158px) {
     .third-section {
         padding: 120px 0;
@@ -753,23 +763,14 @@ h1 {
     }
 
     .third-section-list {
+        grid-template-columns: repeat(4, 264px);
         gap: 24px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .third-section-list-item {
-        width: calc((100% - 72px) / 4);
-        padding: 0;
-    }
-
-    .third-section-subtitle {
-        font-size: 20px;
     }
 
     .third-section-paragraph {
         font-size: 16px;
         padding: 0;
+        /* margin-bottom: 8px вже є з базового стилю */
     }
 }
 /* #endregion */
