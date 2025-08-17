@@ -793,7 +793,7 @@ h1 {
 .fourth-section-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 16px;
+    gap: 48px 16px;
     /* row-gap column-gap */
     justify-content: center;
     padding: 0;
@@ -804,7 +804,6 @@ h1 {
 .fourth-section-list-item {
     background-color: #fff;
     width: 100%;
-    /* мобільна версія — картки на всю ширину */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-sizing: border-box;
 }
@@ -854,17 +853,19 @@ h1 {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    text-align: center;
+    text-align: left;
+    /* Вирівнювання по лівому краю */
 }
 
 .fourth-section-paragraph {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
+    text-align: left;
+    /* Вирівнювання по лівому краю */
 }
 
-/* Планшет (768px і вище) */
+/* Планшет */
 @media screen and (min-width: 768px) {
     .fourth-section {
         padding-top: 100px;
@@ -876,9 +877,13 @@ h1 {
         margin-bottom: 56px;
     }
 
+    .fourth-section-list {
+        gap: 72px 24px;
+        /* row-gap col-gap */
+    }
+
     .fourth-section-list-item {
         width: calc((100% - 48px) / 2);
-        /* 2 колонки з відступом */
     }
 
     .container-fourth-section-name {
@@ -894,7 +899,7 @@ h1 {
     }
 }
 
-/* Десктоп (1158px і вище) */
+/* Десктоп */
 @media screen and (min-width: 1158px) {
     .fourth-section {
         padding-top: 120px;
@@ -907,14 +912,12 @@ h1 {
     }
 
     .fourth-section-list {
-        gap: 32px 24px;
-        /* збільшення відстаней */
-        justify-content: space-between;
+        gap: 48px 16px;
+        /* row-gap col-gap */
     }
 
     .fourth-section-list-item {
-        width: calc((100% - 72px) / 3);
-        /* 4 колонки */
+        width: calc((100% - 48px) / 3);
     }
 
     .container-fourth-section-name {
