@@ -419,9 +419,12 @@ h1 {
 .first-section-header {
     max-width: 496px;
     margin-bottom: 48px;
-    font-size: 40px;
-    /* десктопний розмір */
-    line-height: 1.2;
+    font-size: 56px;
+    line-height: 1.07;
+    /* 60px */
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
 
 /* Кнопка */
@@ -453,16 +456,17 @@ h1 {
 /* Смартфон */
 @media (max-width: 767px) {
     .first-section {
-        padding: 120px 16px;
-        /* менше зверху/знизу, додаємо падінг з боків */
+        padding: 72px;
         background-position: center center;
         background-size: cover;
     }
 
     .first-section-header {
-        max-width: 280px;
-        font-size: 28px;
-        margin-bottom: 32px;
+        max-width: 216px;
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 72px;
+        /* згідно макету */
     }
 
     .first-section-order-button {
@@ -476,15 +480,18 @@ h1 {
 /* Планшет */
 @media (min-width: 768px) and (max-width: 1157px) {
     .first-section {
-        padding: 160px 24px;
+        padding: 112px;
         background-position: center center;
         background-size: cover;
     }
 
     .first-section-header {
-        max-width: 400px;
-        font-size: 36px;
-        margin-bottom: 40px;
+        max-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 48px;
+        text-align: center;
     }
 
     .first-section-order-button {
@@ -492,6 +499,28 @@ h1 {
         height: 52px;
         font-size: 17px;
         padding: 0 20px;
+    }
+}
+
+/* Десктоп */
+@media (min-width: 1158px) {
+    .first-section {
+        padding: 188px;
+    }
+
+    .first-section-header {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 48px;
+        /* згідно макету */
+    }
+
+    .first-section-order-button {
+        min-width: 169px;
+        height: 56px;
+        font-size: 18px;
+        padding: 0 24px;
     }
 }
 /* #endregion */
